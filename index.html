@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Айболит — первая русскоязычная онлайн-клиника в Германии. Приём у врача в Берлине или Гамбурге уже завтра. Онлайн-консультация за 60 минут."/>
+  <meta name="robots" content="index, follow"/>
+  <title>Айболит — Врач в Германии уже завтра | Русскоязычная онлайн-клиника</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4CAF50;
+      --accent: #FFEB3B;
+      --blue: #2196F3;
+      --light: #F5F9FF;
+      --dark: #1A3C34;
+      --gray: #555;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    h1, h2, h3 { font-family: 'Comfortaa', cursive; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    
+    header {
+      background: linear-gradient(135deg, var(--blue) 0%, #0D47A1 100%);
+      color: white;
+      text-align: center;
+      padding: 80px 20px 60px;
+    }
+    header h1 { font-size: 3rem; margin-bottom: 16px; }
+    header p { font-size: 1.4rem; max-width: 800px; margin: 0 auto 32px; }
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      font-size: 1.3rem;
+      font-weight: bold;
+      padding: 18px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    .btn:hover { background: #388E3C; transform: translateY(-3px); }
+    .logo {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 30px;
+      background: url('https://iili.io/qoi76ib.png') center/contain no-repeat;
+      border-radius: 50%;
+      border: 8px solid white;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    
+    section { padding: 60px 0; }
+    h2 { font-size: 2.5rem; text-align: center; margin-bottom: 40px; color: var(--dark); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-10px); }
+    .card h3 { font-size: 1.6rem; margin-bottom: 16px; color: var(--primary); }
+    .emoji { font-size: 3rem; margin-bottom: 16px; }
+    
+    .reviews { background: #E8F5E9; }
+    .review-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .review-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+      max-width: 340px;
+      margin: 0 auto;
+    }
+    .review-img {
+      width: 100%;
+      height: 340px;
+      background-size: cover;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+    }
+    .review-text { padding: 20px; }
+    .review-text p { font-style: italic; margin-bottom: 12px; font-size: 1.05rem; }
+    .stars { color: #FFC107; font-size: 1.5rem; }
+    .count { text-align: center; font-size: 1.5rem; margin: 30px 0 50px; color: var(--primary); font-weight: bold; }
+    
+    .steps { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; }
+    .step { max-width: 320px; text-align: center; }
+    .step-num {
+      width: 60px;
+      height: 60px;
+      background: var(--accent);
+      color: var(--dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin: 0 auto 20px;
+    }
+    
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.95rem;
+    }
+    
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.4rem; }
+      header p { font-size: 1.2rem; }
+      .btn { padding: 14px 30px; font-size: 1.1rem; }
+      .logo { width: 140px; height: 140px; }
+      .review-img { height: 340px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo"></div>
+      <h1>Получите приём у врача в Берлине или Гамбурге <strong>уже завтра</strong></h1>
+      <p>Айболит — первая русскоязычная онлайн-клиника в Германии с эксклюзивными правами на срочные термины у лучших врачей</p>
+      <a href="https://t.me/xxxxxx" class="btn" target="_blank">Записаться прямо сейчас →</a>
+      <p style="margin-top:20px; font-size:1.1rem; opacity:0.9;">Сначала онлайн-консультация (быстро и на русском), а затем — запись на приём в удобное время</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>Зачем ждать 2-3 недели, если можно уже завтра?</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="emoji">🚀</div>
+          <h3>Приём на следующий день</h3>
+          <p>Эксклюзивные контракты позволяют бронировать термины за 1 день у большинства специалистов в Берлине и Гамбурге</p>
+        </div>
+        <div class="card">
+          <div class="emoji">🩺</div>
+          <h3>Онлайн-консультация в ближайшие 60 минут</h3>
+          <p>Прямо сейчас, без выхода из дома. Сначала поговорим с врачом — и только потом запишем на очный приём</p>
+        </div>
+        <div class="card">
+          <div class="emoji">💳</div>
+          <h3>Принимаем любую страховку</h3>
+          <p>Государственную (GKV), частную (PKV), временную. <strong>Даже если вы сейчас без страховки</strong> — поможем быстро оформить временную, чтобы не платить десятки тысяч евро из своего кармана</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="container">
+      <h2>Нам доверяют уже 538 пациентов</h2>
+      <p class="count">+538 реальных отзывов в Telegram</p>
+      <div class="review-grid">
+        <div class="review-card">
+          <div class="review-img" style="background-image: url('https://iili.io/qosHj1f.png');"></div>
+          <div class="review-text">
+            <p>добрый вечер😊 хотела сказать спасибо) приняли очень быстро, доктор супер милый, все так уютно было❤️ реально довольна!</p>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-img" style="background-image: url('https://iili.io/qoLlH1n.png');"></div>
+          <div class="review-text">
+            <p>Спасибо вам большое! Очень быстро сделали термин, не нужно ждать две недели, как hausarzt сказал.</p>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-img" style="background-image: url('https://iili.io/qosADu9.png');"></div>
+          <div class="review-text">
+            <p>да, конечно оставлю)) ну я в шоке) записалась прям быстро, врач такой хороший, всё просто объяснил и не торопил, персонал прям супер (вежливые и внимательные) реально кайф))</p>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Как это работает</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Пишите в Telegram</h3>
+          <p>Расскажите о проблеме — ответим в течение нескольких минут</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Онлайн-консультация в ближайший час</h3>
+          <p>Врач на русском языке разберёт ситуацию и подберёт план</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Запись на приём</h3>
+          <p>Бронируем термин уже на завтра (или когда удобно)</p>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:50px;">
+        <a href="https://t.me/xxxxxx" class="btn" target="_blank">Записаться прямо сейчас →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Айболит © 2026 — Русскоязычная онлайн-клиника в Германии<br>
+    Мы заботимся о вас</p>
+  </footer>
+
+</body>
+</html>
